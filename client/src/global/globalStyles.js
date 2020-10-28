@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1{
-      font-size: 6rem;
+      font-size: 3rem;
       color: ${(p) => p.theme.primary};
     }
 `;

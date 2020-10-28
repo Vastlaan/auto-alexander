@@ -8,5 +8,5 @@ export default function ({ children }) {
 
 const Layout = styled.main`
     width: 100%;
-    ${() => respond("xxl", "width: 1366px; margin: 0 auto;")}
+    ${() => respond("xl", "width: 1366px; margin: 0 auto;")}
 `;

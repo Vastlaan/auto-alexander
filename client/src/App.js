@@ -4,6 +4,7 @@ import ReactGA from "react-ga";
 //global
 import GlobalStyles from "./global/globalStyles";
 import ThemeProvider from "./global/themeProvider";
+import StateProvider from "./global/stateProvider";
 //components
 import Landing from "./components/landing";
 
@@ -13,14 +14,16 @@ function App() {
 
     return (
         <>
-            <ThemeProvider>
-                <GlobalStyles />
-                <Router>
-                    <Switch>
-                        <Route exact path="/" component={Landing} />
-                    </Switch>
-                </Router>
-            </ThemeProvider>
+            <StateProvider>
+                <ThemeProvider>
+                    <GlobalStyles />
+                    <Router>
+                        <Switch>
+                            <Route exact path="/" component={Landing} />
+                        </Switch>
+                    </Router>
+                </ThemeProvider>
+            </StateProvider>
         </>
     );
 }
