@@ -1,6 +1,6 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import { respond } from "../styles";
+import { respond, fonts } from "../styles";
 
 export default function () {
     return <GlobalStyles />;
@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
         line-height: 1.3;
         ${() => respond("m", "line-height: 1.6;")}
+        font-family: inherit;
     }
 
     html{
@@ -31,10 +32,11 @@ const GlobalStyles = createGlobalStyle`
 
     body{
         overflow-x: hidden;
+        font-family: ${fonts.primary};
+        background-color: ${(p) => p.theme.white};
     }
 
-    h1{
-      font-size: 3rem;
-      color: ${(p) => p.theme.primary};
+    a{
+        text-decoration: none;
     }
 `;

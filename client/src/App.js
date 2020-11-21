@@ -7,6 +7,8 @@ import ThemeProvider from "./global/themeProvider";
 import StateProvider from "./global/stateProvider";
 //components
 import Landing from "./components/landing";
+import Nav from "./components/navigation";
+import Footer from "./components/footer";
 
 function App() {
     // //initialize analytics
@@ -18,9 +20,11 @@ function App() {
                 <ThemeProvider>
                     <GlobalStyles />
                     <Router>
+                        <Nav />
                         <Switch>
                             <Route exact path="/" component={Landing} />
                         </Switch>
+                        <Footer />
                     </Router>
                 </ThemeProvider>
             </StateProvider>
