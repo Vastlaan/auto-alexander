@@ -7,6 +7,7 @@ import ThemeProvider from "./global/themeProvider";
 import StateProvider from "./global/stateProvider";
 //components
 import Landing from "./components/landing";
+import Contact from "./components/contact";
 import Nav from "./components/navigation";
 import Footer from "./components/footer";
 
@@ -23,6 +24,7 @@ function App() {
                         <Nav />
                         <Switch>
                             <Route exact path="/" component={Landing} />
+                            <Route exact path="/contact" component={Contact} />
                         </Switch>
                         <Footer />
                     </Router>

@@ -39,7 +39,7 @@ export default function Services() {
                         Far far away, behind the word mountains, far from the
                         countries Vokalia and Consonantia.
                     </Para2>
-                    <Link to="/">
+                    <Link to="/diensten">
                         <ButtonFull>Lees meer</ButtonFull>
                     </Link>
                 </Card1>
@@ -53,7 +53,7 @@ export default function Services() {
                         countries Vokalia and Consonantia, there live the blind
                         texts.
                     </Para2>
-                    <Link to="/">
+                    <Link to="/diensten">
                         <ButtonFull>Lees meer</ButtonFull>
                     </Link>
                 </Card2>
@@ -67,7 +67,7 @@ export default function Services() {
                         countries Vokalia and Consonantia, there live the blind
                         texts.Vokalia and Consonantia.
                     </Para2>
-                    <Link to="/">
+                    <Link to="/diensten">
                         <ButtonFull>Lees meer</ButtonFull>
                     </Link>
                 </Card3>

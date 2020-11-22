@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { fonts, respond, Content } from "../../styles";
+import { fonts, respond, Content, ButtonEmpty } from "../../styles";
 import Logo from "../../img/logo-2.png";
+import { RiFacebookFill, RiGoogleFill } from "react-icons/ri";
 
 const data = {
     name: "Auto Alexander",
@@ -19,42 +20,40 @@ const data = {
     copyright: " Alle rechten voorbehouden.",
     sections: [
         {
-            id: 1,
-            header: "Bedrijf",
-            links: ["schoonmaken", "renoveren", "aannemen", "klussen"],
-        },
-        {
             id: 2,
             header: "Diensten",
-            links: ["Auto spuiten", "arrangeren", "aannemen", "particuleren"],
-        },
-        {
-            id: 3,
-            header: "Over Ons",
-            links: ["schoonmaken", "renoveren", "aannemen", "particuleren"],
+            links: [
+                "Auto spuiten",
+                "Carrosseriewerk",
+                "aannemen",
+                "particuleren",
+            ],
         },
         {
             id: 4,
             header: "Privacy",
-            links: ["cookies", "policy", "voorwaarden"],
+            links: ["cookies", "Voorwaarden", "Privacy policy", "Contact"],
         },
     ],
+    offerHeader: "Blijf op de hoogte",
+    offerBtn: "Offerte",
 };
 
 export default function Footer2() {
     return (
         <Footer>
             <Content>
-                <LogoContainer>
-                    <img src={Logo} alt="auto alexander logo" />
-                </LogoContainer>
                 <Bulk>
                     <Info>
-                        <h3>{data.name}</h3>
+                        <LogoContainer>
+                            <img src={Logo} alt="auto alexander logo" />
+                        </LogoContainer>
                         <h4>{data.header}</h4>
                         <div>
                             <p>
                                 {data.address.street} {data.address.nr},{" "}
+                            </p>
+                            <p>
                                 {data.address.city}, {data.address.land}
                             </p>
                             <p>
@@ -76,11 +75,6 @@ export default function Footer2() {
                                 </a>
                             </p>
                         </div>
-                        <h6>
-                            &copy; {new Date().getFullYear()} Copyright{" "}
-                            <a href="https://itcontext.nl">IT Context</a>{" "}
-                            {data.copyright}
-                        </h6>
                     </Info>
                     <Links>
                         {data.sections.map((section, i) => {
@@ -102,8 +96,28 @@ export default function Footer2() {
                                 </div>
                             );
                         })}
+                        <Icons>
+                            <div>
+                                <RiFacebookFill />
+                            </div>
+                            <div>
+                                <RiGoogleFill />
+                            </div>
+                        </Icons>
                     </Links>
+                    <Offer>
+                        <h3>{data.offerHeader}</h3>
+                        <input type="text" placeholder="E-mail" />
+                        <ButtonEmpty color="white">Aanvragen</ButtonEmpty>
+                    </Offer>
                 </Bulk>
+                <Copyright>
+                    <h6>
+                        &copy; {new Date().getFullYear()} Copyright{" "}
+                        <a href="https://itcontext.nl">IT Context</a>{" "}
+                        {data.copyright}
+                    </h6>
+                </Copyright>
             </Content>
         </Footer>
     );
@@ -117,26 +131,27 @@ const Footer = styled.footer`
     ${() => respond("l", "padding: 4.7rem; padding-bottom: 0;")}
 `;
 const Bulk = styled.div`
-    display: flex;
-    flex-direction: column-reverse;
-    ${() => respond("l", "flex-direction:row;")}
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    ${() => respond("s", "grid-template-columns: repeat(2, 1fr);")}
+    ${() => respond("l", "grid-template-columns: repeat(3, 1fr);")}
 `;
 const Info = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 2.7rem;
+    padding: 0 2.7rem;
     flex: 1;
 
     h3 {
         font-size: 2.7rem;
         line-height: 1;
-        color: ${(p) => p.theme.silver};
+        color: ${(p) => p.theme.white};
     }
     h4 {
         font-size: 1.9rem;
         line-height: 1;
         font-weight: 400;
-        color: ${(p) => p.theme.silver};
+        color: ${(p) => p.theme.white};
     }
 
     div {
@@ -144,8 +159,9 @@ const Info = styled.div`
         p {
             font-size: 1.6rem;
             line-height: 1.3;
-            color: ${(p) => p.theme.silver};
+            color: ${(p) => p.theme.white};
             font-weight: 300;
+            margin: 0.6rem 0;
             a {
                 color: #ebf5fb;
                 font-weight: 600;
@@ -158,20 +174,8 @@ const Info = styled.div`
             }
         }
     }
-    h6 {
-        font-size: 1.1rem;
-        line-height: 1;
-        letter-spacing: 0.2rem;
-        font-weight: 300;
-        color: ${(p) => p.theme.silver};
-
-        a {
-            color: white;
-        }
-    }
 `;
 const LogoContainer = styled.div`
-    padding-left: 2.7rem;
     width: 20rem;
 
     img {
@@ -180,11 +184,11 @@ const LogoContainer = styled.div`
 `;
 const Links = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.9rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap-column: 2.3rem;
     padding: 2.7rem;
 
-    ${() => respond("l", "grid-template-columns: repeat(4, 1fr);")}
+    ${() => respond("l", "grid-template-columns: repeat(2, 1fr);")}
 
     div {
         display: flex;
@@ -202,18 +206,92 @@ const Links = styled.div`
         }
 
         a {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
             text-decoration: none;
             font-weight: 300;
-            color: ${(p) => p.theme.silver};
+            color: ${(p) => p.theme.white};
             line-height: 1.3;
-            font-size: 1.9rem;
+            font-size: 1.6rem;
             text-transform: capitalize;
             transition: all 0.3s;
 
             &:hover {
                 color: ${(p) => p.theme.grey};
             }
+        }
+    }
+`;
+const Icons = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    margin: 0 !important;
+
+    div {
+        border: 1px solid ${(p) => p.theme.white};
+        border-radius: 3px;
+        padding: 0.9rem 1.3rem;
+        margin-right: 2.7rem;
+
+        svg {
+            font-size: 2.7rem;
+            color: ${(p) => p.theme.white};
+            cursor: pointer;
+        }
+    }
+`;
+const Offer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5.4rem 2.7rem;
+
+    h3 {
+        font-weight: 600;
+        color: ${(p) => p.theme.white};
+        line-height: 1.3;
+        font-size: 1.9rem;
+        margin-bottom: 0.9rem;
+    }
+
+    input {
+        max-widht: 35rem;
+        border: none;
+        padding: 0.9rem 1.9rem;
+        border-radius: 3px;
+        margin: 2.7rem 0;
+
+        &:active,
+        :focus {
+            outline: none;
+            box-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    button {
+        &:hover {
+            background-color: transparent;
+            border: 1px solid ${(p) => p.theme.white};
+            box-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+        }
+    }
+`;
+const Copyright = styled.div`
+    display: flex;
+    justify-content: center;
+    widht: 100%;
+    padding-bottom: 1.9rem;
+
+    h6 {
+        font-size: 1.1rem;
+        line-height: 1;
+        letter-spacing: 0.2rem;
+        font-weight: 300;
+        color: ${(p) => p.theme.white};
+
+        a {
+            color: white;
         }
     }
 `;

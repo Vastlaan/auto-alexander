@@ -4,24 +4,21 @@ import styled from "styled-components";
 import Img from "../../img/auto-alexander-2-min.jpg";
 import { respond, ButtonFull, ButtonEmpty } from "../../styles";
 
-export default function HeaderMin() {
+export default function HeaderMin({ header, para, btn1, btn2, link1, link2 }) {
     return (
         <Container>
             <ImageContainer>
                 <img src={Img} alt="building" />
             </ImageContainer>
             <Content>
-                <h1>Ideaal voor groot en klein plaatwerk</h1>
-                <p>
-                    Bereik de juiste doelgroup en overtuig hen om contact met je
-                    op te nemen
-                </p>
+                <h1>{header}</h1>
+                <p>{para}</p>
                 <Buttons>
-                    <Link to="/">
-                        <ButtonFull>Offerte</ButtonFull>
+                    <Link to={link1}>
+                        <ButtonFull>{btn1}</ButtonFull>
                     </Link>
-                    <Link to="/">
-                        <ButtonEmpty>Contact</ButtonEmpty>
+                    <Link to={link2}>
+                        <ButtonEmpty>{btn2}</ButtonEmpty>
                     </Link>
                 </Buttons>
             </Content>

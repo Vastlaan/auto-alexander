@@ -50,17 +50,17 @@ function Navigation(props) {
                     </Top>
 
                     <Buttons visible={isVisible}>
-                        <Link to="/">
+                        <Link to="/diensten">
                             <ButtonPlain>Diensten</ButtonPlain>
                         </Link>
-                        <Link to="/">
+                        <Link to="/galerij">
                             <ButtonPlain>Galerij</ButtonPlain>
                         </Link>
-                        <Link to="/">
+                        <Link to="/contact">
                             <ButtonPlain>Contact</ButtonPlain>
                         </Link>
                         <Link
-                            to="/"
+                            to="/afspraak"
                             style={
                                 window.innerWidth >= 1366
                                     ? {}
@@ -121,7 +121,7 @@ const Top = styled.div`
     ${() =>
         respond(
             "xl",
-            "padding: 2.3rem 0 0 4.7rem; width: auto; background-color: transparent;"
+            "padding:.9rem 4.7rem; width: auto; background-color: transparent;"
         )}
 
     img {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
     respond,
@@ -35,8 +36,12 @@ export default function HeaderComponent() {
                         de weg op kunt. Maak nu uw afspraak!
                     </Para1>
                     <Buttons>
-                        <ButtonFull>Plan een afspraak</ButtonFull>
-                        <ButtonEmpty>Contact</ButtonEmpty>
+                        <Link to="/afspraak">
+                            <ButtonFull>Plan een afspraak</ButtonFull>
+                        </Link>
+                        <Link to="/contact">
+                            <ButtonEmpty>Contact</ButtonEmpty>
+                        </Link>
                     </Buttons>
                     <Icons>
                         <SocialButton

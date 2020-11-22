@@ -70,3 +70,15 @@ export const Heading22 = styled.h2`
 
     ${() => respond("l", "font-size: 4.7rem;")}
 `;
+export const Heading4 = styled.h3`
+    color: ${(p) => p.theme.primary};
+    font-size: 2.7rem;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 900;
+    max-width: 45rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+
+    ${() => respond("l", "font-size: 2.7rem;")}
+`;

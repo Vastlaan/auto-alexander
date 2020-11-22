@@ -3,7 +3,7 @@ import { colorsLight, colorsDark } from "./colors";
 import { Header, Content, SectionNarrow, Section } from "./containers";
 import { fonts } from "./fonts";
 import { ButtonFull, ButtonEmpty, SocialButton } from "./buttons";
-import { Heading1, Heading2, Heading22, Heading3 } from "./headings";
+import { Heading1, Heading2, Heading22, Heading3, Heading4 } from "./headings";
 import { Para1, Para2 } from "./paragraphs";
 
 export {
@@ -22,6 +22,7 @@ export {
     Heading2,
     Heading22,
     Heading3,
+    Heading4,
     Para1,
     Para2,
 };
