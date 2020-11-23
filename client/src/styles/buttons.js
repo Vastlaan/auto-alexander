@@ -186,7 +186,8 @@ export const ButtonFull = styled.button`
     line-height: 1;
     cursor: pointer;
     transition: all 0.3s;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem;
+    min-width: 20rem;
 
     &:hover {
         background-color: transparent;
@@ -212,6 +213,7 @@ export const ButtonEmpty = styled.button`
     line-height: 1;
     cursor: pointer;
     transition: all 0.3s;
+    min-width: 20rem;
 
     &:hover {
         background-color: ${(p) => (p.color ? p.color : p.theme.primary)};

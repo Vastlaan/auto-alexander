@@ -109,11 +109,12 @@ const Layout = styled.div`
 const Form = styled.form`
     margin-top: 4.7rem;
     grid-column: 1/4;
+    grid-row: 2/3;
     display: flex;
     flex-direction: column;
     padding: 4.7rem 2.7rem;
 
-    ${() => respond("xl", "grid-column: 1/3;")}
+    ${() => respond("xl", "grid-column: 1/3;grid-row: 1/2;")}
 `;
 const Panel = styled.div`
     display: grid;
@@ -189,6 +190,7 @@ const Message = styled.div`
 
 const Contact = styled.div`
     grid-column: 1/4;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     margin-top: 4.7rem;

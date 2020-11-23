@@ -50,17 +50,21 @@ function Navigation(props) {
                     </Top>
 
                     <Buttons visible={isVisible}>
-                        <Link to="/diensten">
+                        <Link
+                            to="/diensten"
+                            onClick={() => setIsVisible(false)}
+                        >
                             <ButtonPlain>Diensten</ButtonPlain>
                         </Link>
-                        <Link to="/galerij">
+                        <Link to="/galerij" onClick={() => setIsVisible(false)}>
                             <ButtonPlain>Galerij</ButtonPlain>
                         </Link>
-                        <Link to="/contact">
+                        <Link to="/contact" onClick={() => setIsVisible(false)}>
                             <ButtonPlain>Contact</ButtonPlain>
                         </Link>
                         <Link
                             to="/afspraak"
+                            onClick={() => setIsVisible(false)}
                             style={
                                 window.innerWidth >= 1366
                                     ? {}
