@@ -9,6 +9,7 @@ import ScrollToTop from "./global/scrollToTop";
 //components
 import Landing from "./components/landing";
 import Services from "./components/services";
+import Gallery from "./components/gallery";
 import Contact from "./components/contact";
 import Nav from "./components/navigation";
 import Footer from "./components/footer";
@@ -32,6 +33,7 @@ function App() {
                                 path="/diensten"
                                 component={Services}
                             />
+                            <Route exact path="/galerij" component={Gallery} />
                             <Route exact path="/contact" component={Contact} />
                         </Switch>
                         <Footer />
