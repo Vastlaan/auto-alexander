@@ -28,6 +28,7 @@ export default function Header() {
                                     id="name"
                                     name="name"
                                     placeholder="naam"
+                                    required
                                 />
                             </Field>
                             <Field>
@@ -37,6 +38,7 @@ export default function Header() {
                                     id="email"
                                     name="email"
                                     placeholder="e-mail"
+                                    required
                                 />
                             </Field>
                             <Field2>
@@ -67,6 +69,7 @@ export default function Header() {
                             </Field>
                         </Message>
                         <Field>
+                            
                             <ButtonFull>Versturen</ButtonFull>
                         </Field>
                     </Panel>
@@ -238,3 +241,4 @@ const Field3 = styled.button`
         color: ${(p) => p.theme.primary};
     }
 `;
+

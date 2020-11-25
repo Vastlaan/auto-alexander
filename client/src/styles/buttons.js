@@ -186,7 +186,7 @@ export const ButtonFull = styled.button`
     line-height: 1;
     cursor: pointer;
     transition: all 0.3s;
-    margin: 1rem 1rem;
+    margin: 1rem 1rem 1rem 0;
     min-width: 20rem;
 
     &:hover {

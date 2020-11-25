@@ -66,17 +66,17 @@ const Buttons = styled.div`
     grid-column: 1/4;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 0 0 4.7rem 4.7rem;
+    padding: 0 0 4.7rem 0;
 
     ${() =>
         respond(
             "xl",
-            "grid-column: 3/4; justify-content: center; flex-direction: column;"
+            "grid-column: 3/4; justify-content: center; flex-direction: column;justify-content: flex-start;padding: 0 0 4.7rem 4.7rem; "
         )}
 
     button {
-        margin: 1.3rem 0;
+        margin: 1.3rem;
     }
 `;

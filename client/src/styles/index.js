@@ -1,6 +1,12 @@
 import { respond } from "./respond";
 import { colorsLight, colorsDark } from "./colors";
-import { Header, Content, SectionNarrow, Section } from "./containers";
+import {
+    Header,
+    Content,
+    SectionNarrow,
+    Section,
+    FormColumn,
+} from "./containers";
 import { fonts } from "./fonts";
 import { ButtonFull, ButtonEmpty, SocialButton } from "./buttons";
 import {
@@ -24,6 +30,7 @@ export {
     Content,
     SectionNarrow,
     Section,
+    FormColumn,
     ButtonFull,
     ButtonEmpty,
     SocialButton,

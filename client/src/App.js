@@ -11,6 +11,7 @@ import Landing from "./components/landing";
 import Services from "./components/services";
 import Gallery from "./components/gallery";
 import Contact from "./components/contact";
+import Appointment from "./components/appointment";
 import Nav from "./components/navigation";
 import Footer from "./components/footer";
 
@@ -35,6 +36,11 @@ function App() {
                             />
                             <Route exact path="/galerij" component={Gallery} />
                             <Route exact path="/contact" component={Contact} />
+                            <Route
+                                exact
+                                path="/afspraak"
+                                component={Appointment}
+                            />
                         </Switch>
                         <Footer />
                     </Router>

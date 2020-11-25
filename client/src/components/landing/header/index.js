@@ -76,8 +76,10 @@ const Layout = styled.div`
     ${() => respond("l", "padding: 4.7rem;")}
 
     h1 {
-        margin-top: 6.8rem;
+        margin-top: 6.7rem;
         margin-bottom: 2.7rem;
+
+        ${() => respond("xxl", "margin-top: 11.5rem;")}
     }
     p {
         margin-bottom: 6.8rem;
@@ -85,8 +87,11 @@ const Layout = styled.div`
 `;
 const Buttons = styled.div`
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 2.7rem;
+
+    ${() => respond("s", "flex-direction: row; align-items: center;")}
 
     button {
         margin-right: 2.7rem;

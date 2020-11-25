@@ -8,7 +8,7 @@ export default function HeaderMin({ header, para, btn1, btn2, link1, link2 }) {
     return (
         <Container>
             <ImageContainer>
-                <img src={Img} alt="building" />
+                <img src={Img} alt="auto" />
             </ImageContainer>
             <Content>
                 <h1>{header}</h1>
@@ -112,11 +112,16 @@ const Content = styled.div`
 `;
 const Buttons = styled.div`
     margin: 6.7rem 0;
-    max-width: 27rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-self: center;
+    width: 90%;
 
-    ${() => respond("xl", "align-self: auto;margin: 6.7rem 0 4.1rem 0;")}
+    ${() =>
+        respond(
+            "xl",
+            "align-self: auto;margin: 6.7rem 0 4.1rem 0;max-width: 27rem;"
+        )}
 `;

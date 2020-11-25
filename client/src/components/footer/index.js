@@ -229,13 +229,13 @@ const Icons = styled.div`
     margin: 0 !important;
 
     div {
-        border: 1px solid ${(p) => p.theme.white};
-        border-radius: 3px;
-        padding: 0.9rem 1.3rem;
-        margin-right: 2.7rem;
+        border: 2px solid ${(p) => p.theme.white};
+        border-radius: 5px;
+        padding: 0.3rem 0.9rem;
+        margin-right: 0.9rem;
 
         svg {
-            font-size: 2.7rem;
+            font-size: 1.9rem;
             color: ${(p) => p.theme.white};
             cursor: pointer;
         }

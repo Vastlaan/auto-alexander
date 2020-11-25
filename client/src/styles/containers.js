@@ -3,10 +3,10 @@ import { respond } from "./respond";
 
 export const Header = styled.header`
     padding-top: 5rem; //margin for navbar
-    min-height: 70vh;
+    min-height: 80vh;
     background-image: linear-gradient(
             to right,
-            ${(p) => p.theme.white} 50%,
+            ${(p) => p.theme.white} 40%,
             rgba(255, 255, 255, 0.1)
         ),
         linear-gradient(to top, transparent 80%, rgba(255, 255, 255, 1)),
@@ -29,4 +29,15 @@ export const SectionNarrow = styled.section`
 
 export const Section = styled.section`
     width: 100%;
+`;
+export const FormColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-size: 2.3rem;
+        font-weight: 600;
+
+        line-height: 1;
+        color: ${(p) => p.theme.white};
+    }
 `;
