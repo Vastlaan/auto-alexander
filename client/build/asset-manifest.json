@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.js": "/static/js/main.49444f0b.chunk.js",
+    "main.js.map": "/static/js/main.49444f0b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2f9ecff9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2f9ecff9.js.map",
+    "static/css/2.0440f8c5.chunk.css": "/static/css/2.0440f8c5.chunk.css",
+    "static/js/2.6075f7cd.chunk.js": "/static/js/2.6075f7cd.chunk.js",
+    "static/js/2.6075f7cd.chunk.js.map": "/static/js/2.6075f7cd.chunk.js.map",
+    "static/js/3.d104f457.chunk.js": "/static/js/3.d104f457.chunk.js",
+    "static/js/3.d104f457.chunk.js.map": "/static/js/3.d104f457.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0440f8c5.chunk.css.map": "/static/css/2.0440f8c5.chunk.css.map",
+    "static/js/2.6075f7cd.chunk.js.LICENSE.txt": "/static/js/2.6075f7cd.chunk.js.LICENSE.txt",
+    "static/media/afspraak-header.6a1a3881.jpg": "/static/media/afspraak-header.6a1a3881.jpg",
+    "static/media/auto-alexander-1-min.a644baf1.jpg": "/static/media/auto-alexander-1-min.a644baf1.jpg",
+    "static/media/auto-alexander-2-min.8604d437.jpg": "/static/media/auto-alexander-2-min.8604d437.jpg",
+    "static/media/galery-header-1.07a3608e.jpg": "/static/media/galery-header-1.07a3608e.jpg",
+    "static/media/galery-header-2.47e6ddfb.jpg": "/static/media/galery-header-2.47e6ddfb.jpg",
+    "static/media/galery-header-3.cd9d99a6.jpg": "/static/media/galery-header-3.cd9d99a6.jpg",
+    "static/media/gallery-1.36e7cf9a.jpg": "/static/media/gallery-1.36e7cf9a.jpg",
+    "static/media/gallery-2.fe35cf27.jpg": "/static/media/gallery-2.fe35cf27.jpg",
+    "static/media/gallery-3.b585039c.jpg": "/static/media/gallery-3.b585039c.jpg",
+    "static/media/gallery-4.dabc29c7.jpg": "/static/media/gallery-4.dabc29c7.jpg",
+    "static/media/gallery-5.b3eca0c5.jpg": "/static/media/gallery-5.b3eca0c5.jpg",
+    "static/media/gallery-6.4fdc74ec.jpg": "/static/media/gallery-6.4fdc74ec.jpg",
+    "static/media/gallery-7.cfe1f61e.jpg": "/static/media/gallery-7.cfe1f61e.jpg",
+    "static/media/gallery-8.f1185e02.jpg": "/static/media/gallery-8.f1185e02.jpg",
+    "static/media/team-1.f6cae479.png": "/static/media/team-1.f6cae479.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f9ecff9.js",
+    "static/css/2.0440f8c5.chunk.css",
+    "static/js/2.6075f7cd.chunk.js",
+    "static/js/main.49444f0b.chunk.js"
+  ]
+}
