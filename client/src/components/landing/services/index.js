@@ -44,14 +44,16 @@ export default function Services() {
                     </Link>
                 </Card1>
                 <Card2>
-                    <Heading3>Carrosseriewerk</Heading3>
+                    <Heading3>Plaatwerk</Heading3>
                     <Icon>
                         <img src={Icon2} alt="carroseriewerk icon" />
                     </Icon>
                     <Para2>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts.
+                        Onze team die al meer dan 20 jaar in het vak zit is zeer
+                        te vertrouwen. Wij maken kunststofreparaties, onderhoud
+                        en tuning. Samen met de spuiterij is dit de perfecte
+                        combinatie om uw auto er weer stel als nieuw uit te
+                        laten zien.
                     </Para2>
                     <Link to="/diensten">
                         <ButtonFull>Lees meer</ButtonFull>
@@ -67,9 +69,9 @@ export default function Services() {
                         countries Vokalia and Consonantia, there live the blind
                         texts.Vokalia and Consonantia.
                     </Para2>
-                    <Link to="/diensten">
+                    <a href="tel:0031659738276">
                         <ButtonFull>Lees meer</ButtonFull>
-                    </Link>
+                    </a>
                 </Card3>
             </Layout>
         </SectionNarrow>

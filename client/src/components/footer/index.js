@@ -231,7 +231,7 @@ const Icons = styled.div`
     div {
         border: 2px solid ${(p) => p.theme.white};
         border-radius: 5px;
-        padding: 0.3rem 0.9rem;
+        padding: 0.3rem 0.6rem;
         margin-right: 0.9rem;
 
         svg {

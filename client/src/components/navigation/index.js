@@ -177,9 +177,25 @@ const ButtonPlain = styled.button`
     cursor: pointer;
     transition: all 0.3s;
     margin: 1rem 0;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: ${(p) => p.theme.black};
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        opacity: 0;
+        transition: all 0.2s;
+    }
 
     &:hover {
-        color: ${(p) => p.theme.grey};
+        &:after {
+            bottom: 0;
+            opacity: 0.6;
+        }
     }
 
     &:active,

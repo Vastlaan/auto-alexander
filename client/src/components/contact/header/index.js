@@ -69,7 +69,6 @@ export default function Header() {
                             </Field>
                         </Message>
                         <Field>
-                            
                             <ButtonFull>Versturen</ButtonFull>
                         </Field>
                     </Panel>
@@ -79,25 +78,33 @@ export default function Header() {
                     <Para1>
                         Wij werken van maandag t/m vrijdag 08:00 - 16:00
                     </Para1>
-                    <Field3>
-                        <RiMapPinLine />
-                        <p>
-                            Herastraat 49 <br />
-                            5047 TX Tilburg{" "}
-                        </p>
-                    </Field3>
-                    <Field3>
-                        <RiMailLine />
-                        <p>info@auto-alexander.nl</p>
-                    </Field3>
-                    <Field3>
-                        <RiPhoneLine />
-                        <p>06 17 23 15 85 (PL)</p>
-                    </Field3>
-                    <Field3>
-                        <RiPhoneLine />
-                        <p>06 59 73 82 76 (NL)</p>
-                    </Field3>
+                    <a href="https://www.google.com/maps/place/Herastraat+43,+5047+TX+Tilburg/@51.592085,5.006604,16z/data=!4m5!3m4!1s0x47c6963a1ac38025:0xd07dc3852710ccee!8m2!3d51.5920846!4d5.0066039">
+                        <Field3>
+                            <RiMapPinLine />
+                            <p>
+                                Herastraat 49 <br />
+                                5047 TX Tilburg{" "}
+                            </p>
+                        </Field3>
+                    </a>
+                    <a href="mailto:info@auto-alexander.nl">
+                        <Field3>
+                            <RiMailLine />
+                            <p>info@auto-alexander.nl</p>
+                        </Field3>
+                    </a>
+                    <a href="tel:0031617231585">
+                        <Field3>
+                            <RiPhoneLine />
+                            <p>06 17 23 15 85 (PL)</p>
+                        </Field3>
+                    </a>
+                    <a href="tel:0031659738276">
+                        <Field3>
+                            <RiPhoneLine />
+                            <p>06 59 73 82 76 (NL)</p>
+                        </Field3>
+                    </a>
                 </Contact>
             </Layout>
         </SectionNarrow>
@@ -241,4 +248,3 @@ const Field3 = styled.button`
         color: ${(p) => p.theme.primary};
     }
 `;
-

@@ -73,7 +73,7 @@ const Buttons = styled.div`
     ${() =>
         respond(
             "xl",
-            "grid-column: 3/4; justify-content: center; flex-direction: column;justify-content: flex-start;padding: 0 0 4.7rem 4.7rem; "
+            "grid-column: 3/4; justify-content: center; flex-direction: column;padding: 0 0 4.7rem 4.7rem; "
         )}
 
     button {

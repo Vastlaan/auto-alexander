@@ -19,15 +19,15 @@ export default function Diensten() {
                     <Heading5>Onze diensten</Heading5>
                     <Para1>
                         Wil jij je auto of een onderdeel opnieuw laten spuiten?
-                        Welk merk of model je ook hebt, bij ons ben je altijd
-                        aan het juiste adres.
+                        Welk merk of model je ook hebt, bij Auto Alexander ben
+                        je altijd aan het juiste adres.
                     </Para1>
                     <Para1>
                         Is de lak van je auto aangetast door weersinvloeden
                         (dof), vervelende krassen, of misschien wil je wel een
-                        hele andere kleur op je auto? Bij ons ben je aan het
-                        juiste adres voor het aanbrengen van een nieuwe laklaag
-                        op je auto.
+                        hele andere kleur op je auto? Bij Auto Alexander ben je
+                        aan het juiste adres voor het aanbrengen van een nieuwe
+                        laklaag op je auto.
                     </Para1>
                     <Para1>
                         Het is ook mogelijk om je carrosserie, velgen of
@@ -77,7 +77,7 @@ export default function Diensten() {
                         <Para3>prijs vanaf € 100</Para3>
                     </Card>
                     <Card>
-                        <Heading4>carosserriewerk</Heading4>
+                        <Heading4>Plaatwerk</Heading4>
                         <Para1>
                             Van een minuscule kras tot een fel gedeukte wagen.
                             Bij Auto Alexander kunt u terecht met kleine én

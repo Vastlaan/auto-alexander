@@ -20,7 +20,7 @@ export default function HeaderComponent() {
             <Content>
                 <Layout>
                     <Heading1>
-                        {"Personlijk en transparant"
+                        {"Auto Alexander autospuiterij"
                             .split(" ")
                             .map((w, i, a) =>
                                 i !== a.length - 1 ? (
@@ -31,9 +31,10 @@ export default function HeaderComponent() {
                             )}
                     </Heading1>
                     <Para1>
-                        Met onderhoud op maat gaan wij aan de slag om uw auto
-                        weer helemaal rijklaar te maken, zodat u altijd veilig
-                        de weg op kunt. Maak nu uw afspraak!
+                        Auto Alexander is gespecialiseerde in autospuiterij en
+                        plaatwerk. Bij ons worden ook restauraties,
+                        autoruitschades of schadeherstel onder één dak
+                        uitgevoerd.
                     </Para1>
                     <Buttons>
                         <Link to="/afspraak">
