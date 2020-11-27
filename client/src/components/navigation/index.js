@@ -32,7 +32,7 @@ function Navigation(props) {
                         <Link to="/">
                             <img
                                 src={
-                                    window.innerWidth >= 1366
+                                    window.innerWidth >= 1280
                                         ? LogoBlack
                                         : LogoWhite
                                 }
@@ -66,19 +66,19 @@ function Navigation(props) {
                             to="/afspraak"
                             onClick={() => setIsVisible(false)}
                             style={
-                                window.innerWidth >= 1366
+                                window.innerWidth >= 1280
                                     ? {}
                                     : { marginTop: "2.7rem" }
                             }
                         >
                             <ButtonEmpty
                                 color={
-                                    window.innerWidth >= 1366
+                                    window.innerWidth >= 1280
                                         ? props.theme.black
                                         : props.theme.white
                                 }
                                 color2={
-                                    window.innerWidth >= 1366
+                                    window.innerWidth >= 1280
                                         ? props.theme.white
                                         : props.theme.black
                                 }

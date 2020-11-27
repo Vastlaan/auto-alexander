@@ -21,10 +21,10 @@ export default function Team() {
                     </Image>
                     <Text>
                         <Para1>
-                            Separated they live in Bookmarksgrove right at the
-                            coast of the Semantics, a large language ocean. A
-                            small river named Duden flows by their place and
-                            supplies it with the necessary regelialia.
+                            Service en kunde op hoog niveau! Een ongeluk zit in
+                            een klein hoekje. Voor deze ongelukjes met kleine en
+                            grotere schades aan uw auto kunt u altijd terecht
+                            bij Auto Alexander.
                         </Para1>
                     </Text>
                 </Layout>

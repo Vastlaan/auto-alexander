@@ -17,13 +17,13 @@ export const Header = styled.header`
 `;
 
 export const Content = styled.div`
-    max-width: 1366px;
+    max-width: 1280px;
     height: 100%;
     margin: 0 auto;
 `;
 
 export const SectionNarrow = styled.section`
-    max-width: 1366px;
+    max-width: 1280px;
     margin: 0 auto;
 `;
 

@@ -6,7 +6,7 @@ import {
     SectionNarrow,
     Heading2,
     Heading3,
-    Para2,
+    Para5,
     ButtonFull,
 } from "../../../styles";
 import Icon1 from "../../../img/auto-alexander-icon-1.png";
@@ -35,10 +35,12 @@ export default function Services() {
                     <Icon>
                         <img src={Icon1} alt="carroseriewerk icon" />
                     </Icon>
-                    <Para2>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia.
-                    </Para2>
+                    <Para5>
+                        Heeft u lakschade opgelopen, of wilt u gewoon een ander
+                        kleurtje? Dan kunt u bij ons terecht. Van oosprong zijn
+                        wij een schadeherstel bedrijf maar wij zijn ook
+                        professioneel en gespecialiseerd in het auto spuiten.
+                    </Para5>
                     <Link to="/diensten">
                         <ButtonFull>Lees meer</ButtonFull>
                     </Link>
@@ -48,13 +50,13 @@ export default function Services() {
                     <Icon>
                         <img src={Icon2} alt="carroseriewerk icon" />
                     </Icon>
-                    <Para2>
+                    <Para5>
                         Onze team die al meer dan 20 jaar in het vak zit is zeer
                         te vertrouwen. Wij maken kunststofreparaties, onderhoud
                         en tuning. Samen met de spuiterij is dit de perfecte
                         combinatie om uw auto er weer stel als nieuw uit te
                         laten zien.
-                    </Para2>
+                    </Para5>
                     <Link to="/diensten">
                         <ButtonFull>Lees meer</ButtonFull>
                     </Link>
@@ -64,13 +66,13 @@ export default function Services() {
                     <Icon>
                         <img src={Icon3} alt="carroseriewerk icon" />
                     </Icon>
-                    <Para2>
+                    <Para5>
                         Far far away, behind the word mountains, far from the
                         countries Vokalia and Consonantia, there live the blind
                         texts.Vokalia and Consonantia.
-                    </Para2>
+                    </Para5>
                     <a href="tel:0031659738276">
-                        <ButtonFull>Lees meer</ButtonFull>
+                        <ButtonFull>Bel: 06 59 73 82 76</ButtonFull>
                     </a>
                 </Card3>
             </Layout>
@@ -104,6 +106,7 @@ const Card = styled.div`
     max-width: 45rem;
     justify-self: center;
     border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(40, 75, 99, 0.4);
 
     p {
         flex: 1;
@@ -135,7 +138,7 @@ const Icon = styled.div`
     align-items: center;
 
     img {
-        width: 15rem;
-        ${() => respond("xl", "width: 19rem;")}
+        width: 10rem;
+        ${() => respond("xl", "width: 15rem;")}
     }
 `;

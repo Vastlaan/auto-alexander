@@ -25,7 +25,7 @@ export const Para2 = styled.p`
 
 export const Para3 = styled.p`
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.3;
     color: ${(p) => p.theme.primary};
     max-width: 40rem;
@@ -43,4 +43,15 @@ export const Para4 = styled.p`
     text-align: center;
 
     ${() => respond("l", "line-height: 1.6;  max-width: 55rem;")}
+`;
+
+export const Para5 = styled.p`
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: ${(p) => p.theme.primary};
+    max-width: 40rem;
+    text-align: center;
+
+    ${() => respond("l", "line-height: 1.6;    text-align: center;")}
 `;

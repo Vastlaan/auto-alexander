@@ -114,7 +114,7 @@ const Buttons = styled.div`
     margin: 6.7rem 0;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-self: center;
     width: 90%;
@@ -122,6 +122,6 @@ const Buttons = styled.div`
     ${() =>
         respond(
             "xl",
-            "align-self: auto;margin: 6.7rem 0 4.1rem 0;max-width: 27rem;"
+            "align-self: auto;margin: 6.7rem 0 4.1rem 0;max-width: 27rem; justify-content: flex-start;"
         )}
 `;

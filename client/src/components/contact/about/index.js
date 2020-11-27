@@ -32,23 +32,23 @@ export default function About() {
                         <Table>
                             <div>
                                 <p>Maandag</p>
-                                <p>08:00 - 16:00</p>
+                                <p>08:00 - 18:00</p>
                             </div>
                             <div>
                                 <p>Dinsdag</p>
-                                <p>08:00 - 16:00</p>
+                                <p>08:00 - 18:00</p>
                             </div>
                             <div>
                                 <p>Woensdag</p>
-                                <p>08:00 - 16:00</p>
+                                <p>08:00 - 18:00</p>
                             </div>
                             <div>
                                 <p>Donderdag</p>
-                                <p>08:00 - 16:00</p>
+                                <p>08:00 - 18:00</p>
                             </div>
                             <div>
                                 <p>Vrijdag</p>
-                                <p>08:00 - 16:00</p>
+                                <p>08:00 - 18:00</p>
                             </div>
                             <div>
                                 <p>Zaterdag</p>

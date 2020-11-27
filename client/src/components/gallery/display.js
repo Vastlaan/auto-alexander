@@ -179,6 +179,8 @@ const Image = styled.div`
         width: 100%;
         object-fit: cover;
         object-position: center;
+        ${() => respond("m", "width: 70%;")}
+        ${() => respond("xl", "width: 100%;")}
     }
 `;
 const Image1 = styled(Image)`

@@ -18,7 +18,7 @@ export function respond(type, content) {
     ${content}
   }`;
     } else if (type === "xl") {
-        return `@media only screen and (min-width: 1365px){
+        return `@media only screen and (min-width: 1280px){
     ${content}
   }`;
     } else if (type === "xxl") {

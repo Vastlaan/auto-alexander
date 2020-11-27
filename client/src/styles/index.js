@@ -19,7 +19,7 @@ import {
     Heading7,
     Heading4,
 } from "./headings";
-import { Para1, Para2, Para3, Para4 } from "./paragraphs";
+import { Para1, Para2, Para3, Para4, Para5 } from "./paragraphs";
 
 export {
     colorsLight,
@@ -46,4 +46,5 @@ export {
     Para3,
     Para2,
     Para4,
+    Para5,
 };

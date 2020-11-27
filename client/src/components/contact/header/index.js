@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
@@ -11,10 +11,47 @@ import {
 import { RiMapPinLine, RiMailLine, RiPhoneLine } from "react-icons/ri";
 
 export default function Header() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [msg, setMsg] = useState("");
+    const [isChecked, setisChecked] = useState(false);
+    const [warning, setWarning] = useState("");
+
+    function submitContactForm(e) {
+        e.preventDefault();
+        if (!isChecked) {
+            return setWarning(
+                "Verklar aub dat je met onze Algemene Voorwaarden kennis hebt gemaakt"
+            );
+        }
+        const data = {
+            name,
+            email,
+            msg,
+        };
+        console.log(data);
+
+        fetch("/api/contact-form-submition", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((d) => {
+                if (d === "Sucess") {
+                    return console.log("Done. Set confirmation.");
+                }
+            })
+            .catch((e) => console.error(e));
+
+        setWarning("");
+    }
     return (
         <SectionNarrow>
             <Layout>
-                <Form>
+                <Form onSubmit={submitContactForm}>
                     <Heading4>Formulier</Heading4>
                     <Para1>
                         Neem contact met ons mee. Wij zijn je graag van dienst!
@@ -29,6 +66,8 @@ export default function Header() {
                                     name="name"
                                     placeholder="naam"
                                     required
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </Field>
                             <Field>
@@ -39,6 +78,8 @@ export default function Header() {
                                     name="email"
                                     placeholder="e-mail"
                                     required
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </Field>
                             <Field2>
@@ -46,6 +87,9 @@ export default function Header() {
                                     type="checkbox"
                                     id="policy"
                                     name="policy"
+                                    onChange={() =>
+                                        setisChecked((prevState) => !prevState)
+                                    }
                                 />
                                 <label htmlFor="policy">
                                     Ik verklaar dat ik mee ben met{" "}
@@ -65,18 +109,24 @@ export default function Header() {
                                     id="msg"
                                     cols="30"
                                     rows="10"
+                                    value={msg}
+                                    onChange={(e) => setMsg(e.target.value)}
+                                    required
                                 ></textarea>
                             </Field>
                         </Message>
                         <Field>
-                            <ButtonFull>Versturen</ButtonFull>
+                            {warning && (
+                                <p style={{ color: "orangered" }}>{warning}</p>
+                            )}
+                            <ButtonFull type="submit">Versturen</ButtonFull>
                         </Field>
                     </Panel>
                 </Form>
                 <Contact>
                     <Heading4>Contact</Heading4>
                     <Para1>
-                        Wij werken van maandag t/m vrijdag 08:00 - 16:00
+                        Wij werken van maandag t/m vrijdag 08:00 - 18:00
                     </Para1>
                     <a href="https://www.google.com/maps/place/Herastraat+43,+5047+TX+Tilburg/@51.592085,5.006604,16z/data=!4m5!3m4!1s0x47c6963a1ac38025:0xd07dc3852710ccee!8m2!3d51.5920846!4d5.0066039">
                         <Field3>
