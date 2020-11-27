@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Confirmation from "../../utils/confirmation";
 import {
     SectionNarrow,
     respond,
@@ -16,6 +17,7 @@ export default function Header() {
     const [msg, setMsg] = useState("");
     const [isChecked, setisChecked] = useState(false);
     const [warning, setWarning] = useState("");
+    const [displayConfirmation, setDisplayConfirmation] = useState(false);
 
     function submitContactForm(e) {
         e.preventDefault();
@@ -157,6 +159,13 @@ export default function Header() {
                     </a>
                 </Contact>
             </Layout>
+            {displayConfirmation && (
+                <Confirmation
+                    setDisplayConfirmation={setDisplayConfirmation}
+                    heading="Bedankt voor uw bericht"
+                    text="Wij streven ernaar om je vraag binnen 2 werkdagen te beantwoorden."
+                />
+            )}
         </SectionNarrow>
     );
 }

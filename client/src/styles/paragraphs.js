@@ -41,6 +41,7 @@ export const Para4 = styled.p`
     color: ${(p) => p.theme.silver};
     max-width: 40rem;
     text-align: center;
+    margin: 0 auto;
 
     ${() => respond("l", "line-height: 1.6;  max-width: 55rem;")}
 `;
