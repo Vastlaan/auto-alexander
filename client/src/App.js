@@ -16,8 +16,8 @@ import Nav from "./components/navigation";
 import Footer from "./components/footer";
 
 function App() {
-    // //initialize analytics
-    // ReactGA.initialize('')
+    //initialize analytics
+    // ReactGA.initialize("G-J7BPFRC0K6");
 
     return (
         <>
